@@ -226,10 +226,13 @@ footer .footer-copyright p {
   .hero-section {
     width: 150%;
   }
+  section {
+    width: 150%;
+  }
   header {
     width: 150%;
   }
   footer {
-    width: 145%;
+    width: 150%;
   }
 }
