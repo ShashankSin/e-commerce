@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 1s ease;
+}
+:root {
+  --font-color-white: #fff;
+  --font-color-black: #000;
+  --Primary-color: #5b24c6;
+  --Secondary-color: #b971ff;
+  --Third-color: #aed2ff;
+  --Fourth-color: #e4f1ff;
+}
+.center {
+  width: 960px;
+  margin: 0 auto;
+}
+/* nav start */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+nav .logo {
+  height: 50px;
+  width: 50px;
+}
+.logo img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  margin-bottom: 0;
+}
+nav ul li {
+  padding-right: 1.5rem;
+}
+nav ul li a,
+.nav-button {
+  text-decoration: none;
+  color: var(--font-color-black);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.nav-button {
+  background-color: transparent;
+  border: none;
+}
+
+.registration button:last-child {
+  margin: 0;
+}
+/* nav ends */
+
+/* section start */
+.btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--font-color-white);
+  background-color: var(--Secondary-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--Third-color);
+}
+section .dress-design-contents {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+section .dress-design-contents .dress-content {
+  flex-basis: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+section .image-card-hover:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 9999999;
+}
+.dress-content h2 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.dress-content h3 {
+  font-size: 25px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.dress-content p {
+  padding-bottom: 1rem;
+}
+.dress-design {
+  flex-basis: 50%;
+  width: 100%;
+  height: 100%;
+}
+.dress-images {
+  position: relative;
+}
+.dress-design .image-card-1 {
+  width: 200px;
+  position: absolute;
+}
+.image-card-position {
+  top: 15px;
+  left: 150px;
+  z-index: 230;
+}
+.image-card-position-1 {
+  top: 0px;
+  left: 0;
+}
+.image-card-position-2 {
+  top: 25px;
+  right: 0;
+}
+.image-card-position-3 {
+  top: 185px;
+  left: 40px;
+}
+.dress-design .image-card-1 img {
+  width: 200px;
+  object-fit: contain;
+}
+/* section ends */
+
+/* footer starts */
+footer {
+  padding: 3rem 0 0 0;
+}
+footer label {
+  font-size: 40px;
+  font-weight: 600;
+}
+footer form {
+  display: flex;
+  margin-top: 4rem;
+}
+footer form input[type="text"] {
+  width: 450px;
+  padding: 1rem 1.5rem;
+  border: none;
+}
+footer form input[type="submit"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  color: var(--font-color-white);
+  letter-spacing: 1.5px;
+}
+.footer-content ul {
+  list-style: none;
+}
+footer .footer-content ul li a {
+  cursor: pointer;
+  text-decoration: none;
+}
+footer .footer-copyright {
+  border-top: 1px solid #3832327a;
+}
+footer .footer-copyright p {
+  margin-bottom: 0;
+}
+.footer-logo p {
+  margin-right: 1rem;
+}
+.footer-logo i {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.nav-alignment {
+  display: none;
+}
+@media only screen and (max-width: 1080px) {
+  .nav-alignment {
+    display: block !important;
+    position: relative;
+  }
+  .nav-alignment > ul {
+    display: none;
+    flex-direction: column;
+    padding: 1.5rem;
+    position: absolute;
+    z-index: 99999;
+    background-color: var(--font-color-white);
+    width: 200px;
+    border-bottom-left-radius: 5px;
+  }
+  .open {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .nav-alignment > ul > li {
+    padding-bottom: 1rem;
+  }
+  .dropdown-menu {
+    transform: translate3d(119px, -3px, 0px) !important;
+  }
+  .dropdown-toggle::after {
+    transform: rotate(-90deg);
+  }
+  .logo {
+    display: none;
+  }
+  .logo-responsive {
+    display: block;
+  }
+  .nav-banner {
+    display: none;
+  }
+  .hero-section {
+    width: 150%;
+  }
+  header {
+    width: 150%;
+  }
+  footer {
+    width: 145%;
+  }
+}
